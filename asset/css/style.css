@@ -12,6 +12,11 @@ body {
     width: 240px;
 }
 
+.box-utente-attivo {
+    margin-top: 20px;
+    font-family: cursive;
+}
+
 .utenti-email {
     padding: 10px;
 }
