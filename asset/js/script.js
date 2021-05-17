@@ -3,7 +3,9 @@ const root = new Vue({
     el: '#root',
     data: {
 
-        
+        utente: [],
+
+
 
     },
     methods: {
@@ -16,7 +18,17 @@ const root = new Vue({
 
     mounted() {
 
-        
+        axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+            .then((resp) => {
+                console.log(resp.data.response)
+                this.utente.push(resp.data.response)
+            })
+            .catch((err) => {
+                console.log(err);
+            })
+
+
+
 
 
 
@@ -25,4 +37,4 @@ const root = new Vue({
 
 });
 
-console.log(root);
+//console.log(root);
