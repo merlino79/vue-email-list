@@ -5,6 +5,7 @@ const root = new Vue({
 
         utente: [],
         loading: true,
+        utenteActive: 0,
 
 
 

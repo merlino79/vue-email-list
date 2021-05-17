@@ -8,8 +8,16 @@ body {
     /* background-color: #bd8216; */
 }
 
+.box-utente {
+    width: 240px;
+}
+
 .utenti-email {
     padding: 10px;
+}
+
+.utenti-email p {
+    text-align: center;
 }
 
 .utenti-email ul {
@@ -18,4 +26,13 @@ body {
 
 .utenti-email li {
     margin: 5px;
+}
+
+.utenti-email li:hover {
+    background-color: antiquewhite;
+    opacity: 0.5;
+}
+
+.active {
+    background-color: rgb(212, 197, 178);
 }

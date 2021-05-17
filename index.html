@@ -24,10 +24,16 @@
                 .....ricarica
             </p>
             <ul>
-                <li v-for="utenti in utente">
-                    {{utenti}}
-                </li>
-            </ul>
+                <div class="box-utente">
+                    <ul>
+                        <li v-for="(utenti, index) in utente" :class="utenteActive === index ? 'active' : ''" @click="utenteActive = index">
+                            {{utenti}}
+                        </li>
+                    </ul>
+
+
+                </div>
+
 
 
 
