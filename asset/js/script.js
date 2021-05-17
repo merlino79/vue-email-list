@@ -4,6 +4,7 @@ const root = new Vue({
     data: {
 
         utente: [],
+        loading: true,
 
 
 
@@ -24,6 +25,7 @@ const root = new Vue({
                     console.log(resp);
                     console.log(resp.data.response)
                     this.utente.push(resp.data.response)
+                    this.loading = false;
                 })
                 .catch((err) => {
                     console.log(err);
