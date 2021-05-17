@@ -7,10 +7,16 @@ const root = new Vue({
         loading: true,
         utenteActive: 0,
 
+        checked: false,
+
 
 
     },
     methods: {
+        removeUtente(index) {
+            this.utente.splice(index, 1)
+
+        }
 
     },
 
@@ -33,6 +39,7 @@ const root = new Vue({
                 })
 
         }
+
 
 
 

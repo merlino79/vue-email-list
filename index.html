@@ -25,9 +25,17 @@
             </p>
             <ul>
                 <div class="box-utente">
+
                     <ul>
-                        <li v-for="(utenti, index) in utente" :class="utenteActive === index ? 'active' : ''" @click="utenteActive = index">
-                            {{utenti}}
+                        <li>
+                            <li>
+                                <li v-for="(utenti, index) in utente" @click="utenteActive = index" :class="utenteActive === index ? 'checked' : ''">
+                                    {{utenti}}
+                                    <i v-if="utente" @click.stop="removeUtente(index, utente)" class="fa fa-check"></i>
+                                </li>
+
+
+                            </li>
                         </li>
                     </ul>
 
