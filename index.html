@@ -17,12 +17,17 @@
 <body>
     <div id="root">
 
-        <h1 v-for="utenti in utente">
+        <div class="utenti-email">
+            <ul>
+                <li v-for="utenti in utente">
+                    {{utenti}}
+                </li>
+            </ul>
 
-            {{utenti}}
 
 
-        </h1>
+        </div>
+
 
 
 
